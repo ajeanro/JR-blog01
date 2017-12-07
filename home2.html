@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Browser Compatibility</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Micro Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Recent Posts
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="home2.html">Browser compatibility</a>
+                            <a class="dropdown-item" href="css-colors.html">CSS colors</a>
+                            <a class="dropdown-item" href="freelance.html">Freelancing</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <article>
+                    <h1>Browser Compatibility</h1>
+                        <p>
+                            In this article, i'll share my thoughts with you about a common 
+                            problem a lot of developpers face or should think about:
+                            how can we ensure that a website is compatible across as many browsers as possible?
+                        </p>
+                        <p>
+                            Each of us often have a preferred internet browser, that we naturally also like 
+                            to use preview websites or web applications in development.There are, however,
+                            a multitude of browsers (and many versions of those browsers), resulting in a variety of experiences for users. 
+                        </p>
+                    <h2>Resetting the user agent stylesheet.. or CSS</h2>
+                        <p>
+                            All browsers have a default set of CSS rules that they apply to HTML.
+                            The default CSS rules live in a stylesheet or <em>user agent stylesheet</em> specific to the browser.
+                            Designing a website across browsers with different user agent stylesheets can be a frustrating experience. To avoid this problem,
+                            we can simply perform a <strong>css reset</strong> using the following steps.
+
+                        </p>
+                        <ol>
+                            <li>Create a <strong>reset.css</strong> file</li>
+                            <li>Copy and Paste CSS reset rules into our <strong>reset.css</strong> file</li>
+                            <li>Link to reset.css in the HTML file (make sure reset.css is loaded first before other CSS files, otherwise reset.css may reset your custom rules by accident).</li>
+
+                        </ol>
+                        <div class="bg-info text-white">
+                            <pre>
+                                <code>
+                                        &lt;!DOCTYPE html&gt;
+                                        &lt;html lang="en"&gt;
+                                        &lt;head&gt;
+                                            &lt;meta charset="UTF-8"&gt;
+                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                            &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                            &lt;title&gt;JR's First Blog&lt;/title&gt;
+                                            &lt;link rel="stylesheet" href="reset.css&gt;
+                                            &lt;link rel="stylesheet" href="styles.css"&gt;
+                                        &lt;/head&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <p>A popular CSS reset can be found <a href="https://meyerweb.com/eric/tools/css/reset/">here</a></p>
+
+
+                </article>  
+            </div>
+            <div class="col-md-4">
+                    <div class="search">
+                            <h3 class="side-title">Search Blog</h2>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter your search keyword(s)" aria-label="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">Go!</button>
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <h3 class="side-title">Connect with us</h2>
+                            <div class="social-apps">
+                                <div class="facebook">
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <span class="app-icon">
+                                            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="twitter">
+                                    <a href="https://www.twitter.com" target="_blank">
+                                        <span class="app-icon">
+                                            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="google">
+                                    <a href="https://plus.google.com/u/0/">
+                                        <span class="app-icon">
+                                            <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="posts">
+                            <h3 class="side-title">Popular posts</h2>
+                        </div>
+                        <div class="email">
+                            <h3 class="side-title">Suscribe</h2>
+        
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+</body>
+</html>

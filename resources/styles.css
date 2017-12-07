@@ -1,0 +1,67 @@
+/*.. nav section .. */
+.upper-nav {
+    height: 30px;
+    font-size: 10px;
+    font-weight: 700px;
+    background-color: lightgrey;
+    text-transform: uppercase;
+}
+.upper-nav ul {
+    float: right;
+    line-height: 40px;
+}
+.upper-nav li {
+    position: relative;
+    float: left;
+    display: block;
+    padding-right: 30px;
+}
+.upper-nav a {
+    padding-bottom: 20px;
+    color: #80847c94;
+}
+/*.. name section..*/
+.siteName {
+    font-family: 'Diplomata SC', cursive;
+}
+/*.. side bar section..*/
+.search {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(223, 140, 63, 0.651);
+}
+.side-title {
+    font-weight: bold;
+    color:  #441675;
+   /* margin-top: 1.5rem;*/
+}
+.social-apps {
+    display: flex;
+}
+.app-icon {
+    color: white;
+}
+.facebook {
+    background-color: #3e64ad;
+    width: 33%;
+    text-align: center;
+}
+.twitter {
+    background-color: #58ccff;
+    width: 33%;
+    text-align: center;
+}
+.google {
+    background-color: #dd4b39;
+    width: 33%;
+    text-align: center;
+}
+/*.. author section..*/
+#author {
+    font-family: 'Niconne', cursive;
+    text-align: center;
+    margin-top: 12px;
+}
+.jr {
+    background-color: #80847c94;
+}
