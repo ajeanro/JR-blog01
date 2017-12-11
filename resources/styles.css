@@ -25,10 +25,20 @@
     font-family: 'Diplomata SC', cursive;
 }
 /*.. side bar section..*/
-.search,.posts,.email {
+.search,.social,.advertisement,.email {
     padding-top: 15px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(223, 140, 63, 0.651);
+    background-color: #ffffc7;
+}
+.advertisement img {
+    width: 17rem;
+    margin-top: 0.5rem;
+}
+.side-ads {
+    font-size: 15px;
+    text-align: center;
+    color: #80847c94;
 }
 .side-title {
     font-weight: bold;
@@ -43,16 +53,17 @@
 }
 .facebook {
     background-color: #3e64ad;
-    width: 33%;
-    text-align: center;
 }
 .twitter {
     background-color: #58ccff;
-    width: 33%;
-    text-align: center;
 }
 .google {
     background-color: #dd4b39;
+}
+.facebook,.twitter,.google {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0.3rem;
     width: 33%;
     text-align: center;
 }
@@ -74,6 +85,11 @@
     padding-top: 1.5rem;
     background-color: #c0f9f4;
 }
+#posts h4 {
+    text-align: right;
+    font-family: 'Faster One', cursive;
+    color: red;
+}
 .media {
     padding-bottom: 1rem;
 }
@@ -92,7 +108,6 @@
 }
 #freelance-media {
     width: 100%;
-    
 }
 #stack-title {
     text-align: center;
